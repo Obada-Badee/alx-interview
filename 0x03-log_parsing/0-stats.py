@@ -35,7 +35,7 @@ def main():
             current_code = info_list[-2]
 
             code_dict[current_code] += 1
-            total_size += 1
+            total_size += file_size
             counter += 1
             if counter % 10 == 0:
                 print_info(total_size, code_dict)
