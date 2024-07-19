@@ -12,9 +12,9 @@ def print_info(total_size, code_dict):
         if status > 0:
             print(f"{code}: {status}", flush=True)
 
+
 def main():
     """Main entry point of the program"""
-
 
     total_size = 0
     counter = 0
@@ -43,4 +43,5 @@ def main():
         print_info(total_size, code_dict)
 
 if __name__ == "__main__":
+
     main()
