@@ -42,6 +42,7 @@ def main():
     except (KeyboardInterrupt, EOFError):
         print_info(total_size, code_dict)
 
+
 if __name__ == "__main__":
 
     main()
