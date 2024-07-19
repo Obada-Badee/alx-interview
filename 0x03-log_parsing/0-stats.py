@@ -16,18 +16,10 @@ def print_info(total_size, code_dict):
 def main():
     """Main entry point of the program"""
 
-    total_size = 0
+    total_size, counter = 0, 0
     counter = 0
-    code_dict = {
-        "200": 0,
-        "301": 0,
-        "400": 0,
-        "401": 0,
-        "403": 0,
-        "404": 0,
-        "405": 0,
-        "500": 0
-    }
+    code_dict = {"200": 0, "301": 0, "400": 0, "401": 0, "403": 0,
+                 "404": 0, "405": 0, "500": 0}
     try:
         for line in sys.stdin:
             info_list = line.strip().split()
@@ -44,5 +36,4 @@ def main():
 
 
 if __name__ == "__main__":
-
     main()
