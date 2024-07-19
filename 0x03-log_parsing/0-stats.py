@@ -41,7 +41,7 @@ def main():
                 current_code = info_list[-2]
                 code_dict[current_code] += 1
                 total_size += int(line_size)
-            counter += 1
+                counter += 1
             if counter % 10 == 0:
                 print_info(total_size, code_dict)
     except (KeyboardInterrupt, EOFError) as ex:
