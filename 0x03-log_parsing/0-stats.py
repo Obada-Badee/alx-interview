@@ -35,13 +35,12 @@ def main():
 
         while True:
             line = input()
-            #if validate_line(line.strip()):
-                info_list = line.strip().split()
-                line_size = info_list[-1]
-                current_code = info_list[-2]
-                code_dict[current_code] += 1
-                total_size += int(line_size)
-                counter += 1
+            info_list = line.strip().split()
+            line_size = info_list[-1]
+            current_code = info_list[-2]
+            code_dict[current_code] += 1
+            total_size += int(line_size)
+            counter += 1
             if counter % 10 == 0:
                 print_info(total_size, code_dict)
     except (KeyboardInterrupt, EOFError):
