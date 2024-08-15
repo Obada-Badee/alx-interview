@@ -43,8 +43,7 @@ def solve_n_queens(n):
             print(res)
             return
         for c in range(n):
-            if (c in cols or (r - c) in pos_diag
-                    or (r + c) in neg_diag):
+            if (c in cols or (r - c) in pos_diag or (r + c) in neg_diag):
                 continue
 
             board[r][c] = [r, c]
